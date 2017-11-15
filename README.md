@@ -1,12 +1,14 @@
 # rest-assured-poc
 
-Basic Java 8 Maven project consisting of RestAssured and Cucumber JVM 2.0.1 as an API testing POC
+Java 8 Maven project which uses RestAssured and Cucumber JVM to provide a basic framework for the testing of Restful APIs
 
 # Running tests 
-To run tests use the following command:
+To run tests from the command line use the following command:
 
 `mvn test`
 
 Cucumber options can be passed as a parameter, such as
 
 `mvn test -Dcucumber.options="--tags @smoke"`
+
+Alternatively, the tests can be run from within an IDE via a JUnit runner class `org.testcraft.runner.RunCukesTest`
